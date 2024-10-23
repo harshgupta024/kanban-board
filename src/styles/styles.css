@@ -1,0 +1,124 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.kanban-board {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Space between title and dropdown */
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add slight shadow for 3D effect */
+}
+
+.navbar-title {
+    margin: 0 auto;
+    /* Center the title */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #f1f1f1;
+    /* Light background for the button */
+    color: black;
+    padding: 10px 15px;
+    /* Padding for the button */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    /* Increased width for better layout */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-buttons {
+    display: flex;
+    /* Horizontal layout for buttons */
+    justify-content: space-between;
+    /* Space between buttons */
+    flex-direction: column;
+    /* Stack buttons vertically */
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px;
+    /* Adjust padding */
+    text-align: left;
+    /* Align text to left */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    border: none;
+    /* Remove border */
+    background-color: transparent;
+    /* Transparent background */
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+    /* Highlight on hover */
+}
+
+.ticket-groups-container {
+    display: flex;
+    /* Align ticket groups horizontally */
+    overflow-x: auto;
+    /* Allow horizontal scrolling if necessary */
+    gap: 20px;
+    /* Space between groups */
+}
+
+.ticket-group {
+    flex-grow: 1;
+    /* Allow groups to grow equally */
+    min-width: 250px;
+    /* Minimum width for each group */
+    border-radius: 8px;
+    /* Rounded corners for group container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for group container */
+    padding: 10px;
+}
+
+.ticket-group-heading {
+    text-align: right;
+    /* Right-align headings */
+    margin-bottom: 10px;
+    /* Space below heading */
+}
+
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack cards vertically within each group */
+}
+
+.card {
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly raised effect */
+    margin-bottom: 10px;
+    /* Space between cards */
+    padding: 15px;
+}
